@@ -29,13 +29,15 @@ public class studententity {
 	@Column(name="division")
     private String schoolDivision; 
 	
-	@Column(name= "gr_number")
+	@NotBlank
+	@Column(name= "gr_number", nullable = false)
 	private String grNumber;
 	
 	@Column(name= "student_name")
 	private String studentName;
 	
-	@Column(name= "rfid_number")
+	@NotBlank
+	@Column(name= "rfid_number", nullable = false)
 	private String rfidNumber;
 	
 	@Column(name= "parent_nmae1")
